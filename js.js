@@ -2,6 +2,8 @@
 const ball = document.querySelector('.ball');
 const field = document.querySelector('.field');
 
+// the ball doesn't move to the centre of the cursor
+
 field.onclick = function (event) {
     let top = event.clientY  - field.clientTop - ball.offsetHeight / 2;
     let left = event.clientX - field.clientLeft - ball.offsetWidth / 2;
